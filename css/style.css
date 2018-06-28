@@ -1,0 +1,191 @@
+
+  *{
+    margin: 0;
+    padding: 0;  
+  }
+  body{
+     background: #f2f0f0;
+  }
+  header{
+    font-family: Arial;
+    font-size: 18px;
+    border-top: #ec7824 solid 1.4vw;
+  }
+  header li{
+     list-style-type: none;
+     float: left;
+     margin-right:  28px;
+     
+     margin-top: 4.5vw;
+  }
+  nav{
+    float: right;
+  }
+  a{
+    text-decoration: none;
+    text-transform: uppercase;  
+  }
+  header li a {
+    color: #85423f;
+    
+  }
+  img[src="img/Layer 70.png"]{
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    margin-top: 3vw;
+    margin-bottom: 111px;
+  }
+  .button{
+    padding:10px 15px;
+    background-color: #eb6c10;
+    color:white;
+    border-radius: 3px;
+  }
+  .content{
+    width: 75%;
+    margin:0 auto;
+  }
+  
+    .armidle{
+      padding: 20px;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    grid-gap: 2.5vw;
+  }
+  article{
+    display: grid;
+    grid-gap: 5em;
+    grid-template:1fr 1fr/1fr 1fr; 
+    grid-template-areas: 
+    "g1 g2"
+    "g3 g3"
+    'arbottom arbottom';
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+
+  }
+  article img{
+    box-shadow: 2px 5px 15px rgba(0,0,0,.1);
+  }
+    .artop{
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1fr;
+    }
+    article .armidle  img, .artop img{
+          border: white solid 5px;
+    }
+    .artop img{ 
+    height: 155px;
+    width: 155px;
+    border-radius:5000px; 
+  }
+  h1{
+    margin-bottom: 40px;
+    color: #5d0400;
+    font-size: 25px;
+  }
+  .servises img{
+    width:100%;
+  }
+article section:nth-of-type(1),article section:nth-of-type(2){
+  border-top: black 1px dotted;
+      border-bottom: black 1px dotted;
+      padding: 2vw;
+}
+      
+
+    article section:nth-of-type(1){
+      
+      grid-area: g1;
+      }
+
+    article section:nth-of-type(2){
+      grid-area: g2;
+    }
+
+    article section:nth-of-type(3){
+      
+      
+      grid-area: g3;
+      display: grid;
+      grid-gap: 1fr;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-areas: 
+      'servises1 servises2 servises3 servises4';
+      
+    }
+   footer{
+    background: #eb6c10;
+    text-align: center;
+    align-content: center;
+    color: white;
+    padding: 54px 0;
+  }
+  .aorenge{
+      color: #eb6c10;
+       text-transform: none;
+
+  }
+  .arbottom{
+    display: grid;
+    grid-gap: 2vw;
+    grid-area:arbottom; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'arbsec1 arbsec2'
+  }
+  .arbottom img{
+    margin-right: .6vw;
+
+  }
+  .arbottom a{
+    color: black;
+    margin: 0 1vw 0 0;
+    font-size: 12px;
+  }
+  .arbottom input{
+    padding: .5vw;
+    outline: none;
+
+  }
+  .arbottom input[type='submit']{
+    padding: .7vw;
+    margin-left: .4vw;
+    background: #eb6c11;
+    color: white;
+    border-radius: 4px;
+    border: none;
+
+  }
+  .arbottom section{
+
+    border-bottom: none !important;
+     
+  }
+  .arbottom section:nth-of-type(1){
+    grid-area: arbsec1;
+  }
+  .arbottom section:nth-of-type(2){
+    grid-area:arbsec2;
+    float: right;
+  }
+  .artop .subartop{
+    margin-top: 5vw;
+    width: 140%;
+  }
+  .artop1 li{
+      color: #5d0400;
+      list-style-type: square;
+  }
+
+  .artop1 li span{
+      color: #000;
+  }
+  .servises p:nth-of-type(2){
+    color: #5d0400;
+    font-size: .9em;
+  }
