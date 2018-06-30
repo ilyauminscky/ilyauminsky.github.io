@@ -138,10 +138,6 @@ article section:nth-of-type(1),article section:nth-of-type(2){
     grid-template-areas: 
     'arbsec1 arbsec2'
   }
-  .arbottom img{
-    margin-right: .6vw;
-
-  }
   .arbottom a{
     color: black;
     margin: 0 1vw 0 0;
